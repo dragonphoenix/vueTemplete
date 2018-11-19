@@ -1,7 +1,11 @@
 <template>
-  <div id="app">
+  <div id="app" class="">
     <img src="../assets/logo.png"/>
-    <input>
+    <div>
+      <span class="icon-user"></span>
+      <input/>
+    </div>
+    <h1 class="error red">AAAAAAAAAA</h1>
   </div>
 </template>
 
@@ -12,6 +16,6 @@
 </script>
 
 <style scoped>
-
+  @import url('../assets/css/login.css');
 
 </style>

@@ -1,0 +1,133 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?ll4r0j');
+    src:  url('../fonts/icomoon.eot?ll4r0j#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?ll4r0j') format('truetype'),
+    url('../fonts/icomoon.woff?ll4r0j') format('woff'),
+    url('../fonts/icomoon.svg?ll4r0j#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    font-size: 16px;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: absolute;
+    top: 7px;
+    margin-left: 8px;
+    color: #777;
+}
+
+.icon-user:before {
+    content: "\e622";
+}
+.icon-lock:before {
+    content: "\e6c6";
+}
+
+body {
+    background-color: #0d111c;
+}
+
+.bg {
+    width: 1920px;
+    height: 1080px;
+    background: url('../images/bg-login.png') no-repeat;
+    margin: 0 auto;
+    position: relative;
+}
+
+.title {
+    position: absolute;
+    left: 50%;
+    margin: 120px 0 0 -274px;
+}
+
+.login-bg {
+    margin: 128px 0 0 85px;
+}
+
+.login-box {
+    width: 410px;
+    height: 376px;
+    background-color: #1c273a;
+    border: 1px solid #a5c0e5;
+    border-radius: 18px;
+    position: absolute;
+    left: 50%;
+    margin: 333px 0 0 -206px;
+}
+
+.login-title {
+    font-size: 24px;
+    color: white;
+    margin: 38px 0 0 158px;
+}
+
+.login-input {
+    margin: 30px 0 0 50px;
+}
+
+.form-group {
+    margin-bottom: 26px;
+    position: relative;
+}
+
+.form-control {
+    font-size: 13px;
+    padding: 6px 28px;
+}
+
+.form-control,
+.btn {
+    width: 310px;
+    height: 38px;
+}
+
+.btn {
+    font-size: 16px;
+    color: white;
+    background-color: #3287d6;
+    border: none;
+    border-radius: 30px;
+}
+
+.kaptcha-code {
+    float: left;
+    width: 175px;
+    height: 38px;
+    padding: 6px 10px;
+}
+
+.picture {
+    margin-left: 14px;
+    height: 38px;
+    width: 118px;
+    display: inline-block;
+    border-radius: 4px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 100px;
+    margin-left: 612px;
+    color: #95a2b9;
+}
+
+.red{
+    color: red;
+}
+.error{
+    height: 20px;
+    text-align: center;
+}

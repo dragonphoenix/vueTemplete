@@ -10,7 +10,23 @@ module.exports = {
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-    proxyTable: {},
+    proxyTable: {
+      '/test/*': {
+        target: "http://127.0.0.1:8080",
+        changeOrigin: true,
+      },
+      '/': {
+        bypass: function (req, res, proxyOptions) {
+          var postfix = '.html';
+          var len = postfix.length;
+          if (req.url && req.url.length > 1 && req.url.indexOf('.') === -1 && req.url.slice(-len) !== postfix) {
+            return req.url + '.html';
+          } else {
+            return req.url;
+          }
+        }
+      },
+    },
 
     // Various Dev Server settings
     host: 'localhost', // can be overwritten by process.env.HOST
